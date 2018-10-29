@@ -56,6 +56,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4111738700668530}
   - component: {fileID: 54693581460402440}
+  - component: {fileID: 114882432476133014}
+  - component: {fileID: 114333520467353016}
   m_Layer: 9
   m_Name: Enemy_3
   m_TagString: Enemy
@@ -277,6 +279,49 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 78
   m_CollisionDetection: 0
+--- !u!114 &114333520467353016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1372761995898360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0076cb1a63d049e478319bc1b455bbf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  fireRate: 0.3
+  health: 10
+  score: 100
+  showDamageDuration: 0.1
+  powerUpDropChance: 0.75
+  OriginalColors: []
+  materials: []
+  showingDamage: 0
+  damageDoneTime: 0
+  notifiedDestruction: 0
+  bndCheck: {fileID: 0}
+--- !u!114 &114882432476133014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1372761995898360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92401da5c0ccaf41bf07cee6e388d6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 2.5
+  keepOnScreen: 0
+  isOnScreen: 1
+  camWidth: 0
+  camHeight: 0
+  offRight: 0
+  offLeft: 0
+  offUp: 0
+  offDown: 0
 --- !u!135 &135033090867903946
 SphereCollider:
   m_ObjectHideFlags: 1

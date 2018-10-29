@@ -22,7 +22,7 @@ public class BoundCheck : MonoBehaviour {
 	// Update is called once per frame
 	void LateUpdate () {
         Vector3 pos = transform.position;
-        isOnScreen = false;
+        isOnScreen = true;
         offRight = offLeft = offUp = offDown = false;
 
         if (pos.x > camWidth - radius)
