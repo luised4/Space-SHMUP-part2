@@ -38,8 +38,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4866598563502796}
   - component: {fileID: 54735453839375468}
+  - component: {fileID: 114460964841186298}
   - component: {fileID: 114856009404541662}
-  - component: {fileID: 114510195997428114}
   m_Layer: 9
   m_Name: Enemy_1
   m_TagString: Enemy
@@ -203,9 +203,9 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 78
+  m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &114510195997428114
+--- !u!114 &114460964841186298
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -213,7 +213,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1506626124428910}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0076cb1a63d049e478319bc1b455bbf9, type: 3}
+  m_Script: {fileID: 11500000, guid: fdd2e151390092f4f84b9fa36200160d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
@@ -221,13 +221,16 @@ MonoBehaviour:
   health: 10
   score: 100
   showDamageDuration: 0.1
-  powerUpDropChance: 0.5
+  powerUpDropChance: 1
   OriginalColors: []
   materials: []
   showingDamage: 0
   damageDoneTime: 0
   notifiedDestruction: 0
   bndCheck: {fileID: 0}
+  waveFrequency: 2
+  waveWidth: 4
+  waveRotY: 45
 --- !u!114 &114856009404541662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -239,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d92401da5c0ccaf41bf07cee6e388d6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 1
+  radius: -2.5
   keepOnScreen: 0
   isOnScreen: 1
   camWidth: 0

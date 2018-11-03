@@ -38,8 +38,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4049837991283550}
   - component: {fileID: 54024162173522530}
+  - component: {fileID: 114380301384525080}
   - component: {fileID: 114232105576582426}
-  - component: {fileID: 114864393364521462}
   m_Layer: 9
   m_Name: Enemy_2
   m_TagString: Enemy
@@ -277,7 +277,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 78
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!114 &114232105576582426
 MonoBehaviour:
@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 3
-  keepOnScreen: 0
+  keepOnScreen: 1
   isOnScreen: 1
   camWidth: 0
   camHeight: 0
@@ -299,7 +299,7 @@ MonoBehaviour:
   offLeft: 0
   offUp: 0
   offDown: 0
---- !u!114 &114864393364521462
+--- !u!114 &114380301384525080
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1693582387076184}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0076cb1a63d049e478319bc1b455bbf9, type: 3}
+  m_Script: {fileID: 11500000, guid: 7528ceb2a98fc864dba6ffebec82c8df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
@@ -315,13 +315,18 @@ MonoBehaviour:
   health: 10
   score: 100
   showDamageDuration: 0.1
-  powerUpDropChance: 0.5
+  powerUpDropChance: 1
   OriginalColors: []
   materials: []
   showingDamage: 0
   damageDoneTime: 0
   notifiedDestruction: 0
   bndCheck: {fileID: 0}
+  sinEccentricity: 0.6
+  lifeTime: 10
+  p0: {x: 0, y: 0, z: 0}
+  p1: {x: 0, y: 0, z: 0}
+  birthTime: 0
 --- !u!135 &135046007130301428
 SphereCollider:
   m_ObjectHideFlags: 1
